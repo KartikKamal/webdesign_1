@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            
+            width: 100vw;
+            height: 96vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container .box-1 {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        .container .box-1 img {
+            width: 55vw;
+            height: 95vh;
+            z-index: 0;
+
+
+        }
+
+        .container .box-1 #b1 {
+
+            padding: 180px 200px;
+        }
+
+
+        .container .box-2 {
+            display: block;
+            padding: 25px 25px 0 25px;
+        }
+
+        .box-2 img {
+            height: 40px;
+
+
+        }
+
+        .container .box-2 h1 {
+            font-size: 75px;
+            padding-top: 53px;
+            padding-bottom: 44px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .container .box-2 h3 {
+            font-size: 50px;
+
+            padding-top: 20px;
+            padding-bottom: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        /* .container .box-2 .signup input {
+
+            height: 36px;
+            width: 258px;
+            margin: 8px;
+            border-radius: 28px;
+            text-align: center;
+            border-color: black ;
+            border-width: thin;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        } */
+        .button {
+            margin: 0;
+            padding: 10px 0;
+            height: 160px;
+            width: 290px;
+            /* border: solid black 2px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+
+        }
+
+
+
+        .button a {
+            display: flex;
+            height: 35px;
+            width: 175px;
+            text-decoration: none;
+
+            /* font-family: 'Times New Roman', Times, serif; */
+            color: black;
+            font-size: 16px;
+            align-items: center;
+
+        }
+
+        .button-1 {
+            background: none;
+            border: solid 1px rgba(0, 0, 0, 0.253);
+            width: 305px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+
+
+        }
+
+        .button-1 img {
+            mix-blend-mode: multiply;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .button-1:hover {
+            cursor: pointer;
+            background-color: rgba(107, 109, 110, 0.1);
+
+        }
+
+
+
+        .button-2 {
+            background: none;
+            border: solid 1px rgba(0, 0, 0, 0.253);
+            width: 305px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+
+
+        }
+
+        .button-2 img {
+            mix-blend-mode: multiply;
+            height: 25px;
+            padding: 5px;
+        }
+
+        .button-2 a {
+            font-weight: bolder;
+        }
+
+        .button-2:hover {
+            cursor: pointer;
+            background-color: rgba(107, 109, 110, 0.1);
+
+        }
+
+        h5 {
+            display: flex;
+            justify-content: center;
+            font-weight: lighter;
+            font-family: Arial, sans-serif;
+        }
+
+
+
+        .button-3 {
+            background: none;
+            border: solid 1px rgba(0, 0, 0, 0.253);
+            width: 305px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+
+            align-items: center;
+            background-color: rgb(0, 179, 255);
+
+        }
+
+        .button-3 a {
+            color: white;
+            padding-left: 45px;
+            font-weight: bold;
+        }
+
+        .button-3:hover {
+            cursor: pointer;
+            background-color: rgb(11, 137, 190)
+        }
+
+        .terms {
+            height: 50px;
+            width: 300px;
+            font-family: sans-serif;
+            font-size: 10px;
+            text-indent: 1px;
+        }
+
+        .terms a {
+            text-decoration: none;
+            color: rgba(21, 120, 163, 0.879);
+
+        }
+
+        .sign_in {
+            height: 80px;
+            width: 250px;
+            padding-left: 25px;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        h4 {
+            font-size: 20px;
+            padding: 20px 0 0 0;
+            font-family: 'Roboto', sans-serif;
+            font-weight: lighter;
+        }
+
+        .sign_in a {
+            text-decoration: none;
+            height: 40px;
+            width: 300px;
+            color: rgb(11, 137, 190);
+            font-weight: bold;
+            border: solid 1px rgba(0, 0, 0, 0.253);
+            border-radius: 20px;
+            background-color: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            height: 30px;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: rgba(126, 124, 124, 0.938);
+            font-weight: lighter;
+            font-size: small;
+            letter-spacing: 1px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">
+            <img src="Images/twitter bird.png" id="b1" alt=""
+                style="position: absolute; height: 350px; width: 350px;align-items: center;">
+            <img src="Images/twitter_bg.jpeg.jpg" alt="Twitter">
+
+        </div>
+        <div class="box-2">
+            <img src="Images/Logo_of_Twitter.svg.webp" alt="">
+            <h1>Happening now</h1>
+            <h3>Join Twitter today.</h3>
+
+            <!-- <div class="signup">
+                <form action="">
+                    <input type="text" placeholder= "Sign up with Google">
+
+                </form>
+                <form action="" id="f2">
+                    <input type="text" placeholder="Sign up with Apple">
+                </form>
+            </div> -->
+            <div class="button">
+                <div class="button-1">
+                    <a href=""><img src="Images/google logo.png" alt="">Sign up with Google</a>
+                </div>
+                <div class="button-2">
+                    <a href=""><img src="Images/Apple-Logo.png" alt="">Sign up with Apple</a>
+                </div>
+                <h5>or</h5>
+                <div class="button-3">
+                    <a href="">Create account</a>
+                </div>
+
+
+            </div>
+            <div class="terms">
+                <p>By signing up, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy
+                        Policy</a>,including <a href="">Cookie Use</a>.</p>
+            </div>
+            <h4>Already have an account?</h4>
+            <div class="sign_in">
+
+                <a href="">Sign in</a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="links" id="link-1"><a href="">About</a></div>
+        <div class="links" id="link-2"><a href="">Help Center</a></div>
+        <div class="links" id="link-3"><a href="">Terms of Service</a></div>
+        <div class="links" id="link-4"><a href="">Privacy Policy</a></div>
+        <div class="links" id="link-5"><a href="">Cookie Policy</a></div>
+        <div class="links" id="link-6"><a href="">Accessibility</a></div>
+        <div class="links" id="link-7"><a href="">Ads info</a></div>
+        <div class="links" id="link-8"><a href="">Blog</a></div>
+        <div class="links" id="link-9"><a href="">Status</a></div>
+        <div class="links" id="link-10"><a href="">Careers</a></div>
+        <div class="links" id="link-11"><a href="">Brand Resource</a></div>
+        <div class="links" id="link-12"><a href="">Advertising</a></div>
+        <div class="links" id="link-13"><a href="">Marketing</a></div>
+        <div class="links" id="link-14"><a href="">Twitter for Buiseness</a></div>
+        <div class="links" id="link-15"><a href="">Developers</a></div>
+        <div class="links" id="link-16"><a href="">Directory</a></div>
+        <div class="links" id="link-17"><a href="">Settings</a></div>
+        <div class="links" id="link-18"><a href="">&#169;2023 X Corp.</a></div>
+    </div>
+
+</body>
+
+</html>
